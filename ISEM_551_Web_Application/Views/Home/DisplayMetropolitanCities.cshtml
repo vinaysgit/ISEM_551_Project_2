@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Models.MetropolitanCity>
+@using GridMvc.Html
+
+<h3>@ViewBag.Message</h3>
+
+<h2>Largest Metropolitan Cities In The World</h2>
+
+<div>
+    @if (Model != null && Model.Count() > 0)
+    {
+        <div class="panel panel-primary pre-scrollable">
+            @Html.Grid(Model).Named("Metropolitan City").Columns(columns =>
+            {
+                columns.Add(col => col.Name).Titled("City");
+                columns.Add(col => col.Country).Titled("Country");
+                columns.Add(col => col.Population).Titled("Population").Format("{0:0,00}");
+                columns.Add(col => col.Area).Titled("Area (Sqkm)").Format("{0:0,00}");
+            }).WithPaging(10).Sortable()
+        </div>
+    }
+
+</div>
