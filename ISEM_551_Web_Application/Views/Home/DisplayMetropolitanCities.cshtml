@@ -8,7 +8,7 @@
 <div>
     @if (Model != null && Model.Count() > 0)
     {
-        <div class="panel panel-primary pre-scrollable">
+        <div class="panel panel-primary pre-scrollable" style="max-height: 500px !important">
             @Html.Grid(Model).Named("Metropolitan City").Columns(columns =>
             {
                 columns.Add(col => col.Name).Titled("City");

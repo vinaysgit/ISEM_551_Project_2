@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8ec1fdc3-68d1-4d27-aad7-d42433b1b062" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52259/GetMetropolitanCitiesService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GetMetropolitanCitiesService.xsd" MetadataType="Schema" ID="1710d48d-9a35-4363-bc73-611b8273f9e0" SourceId="1" SourceUrl="http://localhost:52259/GetMetropolitanCitiesService.svc?xsd=xsd2" />
+    <MetadataFile FileName="GetMetropolitanCitiesService1.xsd" MetadataType="Schema" ID="c70b18fc-03e6-44ec-a4dc-10a49e3848a4" SourceId="1" SourceUrl="http://localhost:52259/GetMetropolitanCitiesService.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="5d87e359-2299-4159-9a61-13970e4be488" SourceId="1" SourceUrl="http://localhost:52259/GetMetropolitanCitiesService.svc?wsdl" />
+    <MetadataFile FileName="GetMetropolitanCitiesService2.xsd" MetadataType="Schema" ID="ebad7e96-c5d2-42d4-9b17-71eacc7460d8" SourceId="1" SourceUrl="http://localhost:52259/GetMetropolitanCitiesService.svc?xsd=xsd0" />
+    <MetadataFile FileName="GetMetropolitanCitiesService.disco" MetadataType="Disco" ID="c8753c18-6869-4af6-ae7d-41913955d3b5" SourceId="1" SourceUrl="http://localhost:52259/GetMetropolitanCitiesService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -16,7 +16,13 @@ namespace Business
             MetropolitanCity metropolitanCity = new MetropolitanCity();
             var metropolitanCitiesList = new List<MetropolitanCity>();
             DataSet dsMetropolitanCities = new DataSet();
-            dsMetropolitanCities = MetropolitanCitiesDAO.getAllMetropolitanCitiesUsingDBConfig();
+            
+            //2nd Assignment
+            //dsMetropolitanCities = MetropolitanCitiesDAO.getAllMetropolitanCitiesUsingDBConfig();
+
+            //3rd assignment
+            var getMetropolitanCities_WebService = new ConsumeMetroCitiesWebService.GetMetropolitanCitiesServiceClient();
+            dsMetropolitanCities = getMetropolitanCities_WebService.GetMetropolitanCities();
 
             if (dsMetropolitanCities.Tables.Count > 0)
             {
